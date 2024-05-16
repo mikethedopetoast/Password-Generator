@@ -5,7 +5,7 @@ This project is deployed at the [link here.](https://github.com/mikethedopetoast
 ### Project Overview
 
 Users can:
-- generate **2 passwords** with 8-32 characters
+- generate **2 passwords** with 8-16 characters
 - set the password length by slider and reflect it in real-time
 - copy passwords to the clipboard by clicking on them
 - see hover states for the interactive elements
