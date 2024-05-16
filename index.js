@@ -8,9 +8,9 @@ let generateBtn = document.getElementById("generate-btn")
 let checkbox = document.getElementById("checkbox")
 
 
-// to set password length
+// to set password length using slider
 
-let passwordLength = 10
+let passwordLength = 8
 
 let slider = document.getElementById("slider")
 let sliderNumber = document.getElementById("slider-number")
@@ -36,6 +36,8 @@ function generateRandomPassword() {
     }
     return randomPassword
 }
+
+// to render generated passwords
 
 generateBtn.addEventListener("click", renderRandomPassword)
 

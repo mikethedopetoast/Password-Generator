@@ -16,8 +16,8 @@ body {
     font-family: "Inter", sans-serif;
     background-color: #E5E7EB;
     margin: 0 auto;
-    min-width: 360px;
-    max-width: 520px;
+    min-width: 420px;
+    max-width: 600px;
     text-align: center;
 }
 
@@ -34,7 +34,6 @@ body {
     flex-direction: column;
     align-items: center;
     border: solid 5px var(--border-dark-green);
-    /* box-shadow: 0.1875em 0.1875em #9CA3AF; */
 }
 
 #banner,
@@ -127,9 +126,17 @@ body {
     color: var(--medium-gray);
     border: solid 3px var(--border-dark-green);
     min-width: 50%;
-    min-height: 50px;
     padding: 1em 2em;
     margin-bottom: 0.5em;
+    white-space: nowrap;
+}
+
+.password-output:hover {
+    padding: 1.25em 2.25em;
+}
+
+.password-output:active {
+    background-color: #FDE68A;
 }
 
 
@@ -156,6 +163,10 @@ body.dark-theme {
 .password-output.dark-theme {
     background-color: #273549;
     color: var(--light-green);
+}
+
+.password-output.dark-theme:active {
+    background-color: #9F1239;
 }
 
 /* Switch theme */
@@ -209,9 +220,4 @@ body.dark-theme {
 
 .fa-sun {
     color: #f39c12;
-}
-
-/* Media queries */
-
-@media (min-width: 576px) {
 }
