@@ -1,0 +1,217 @@
+:root {
+    --white-background: #F3F4F6;
+    --border-dark-green: #047857;
+    --dark-gray: #064E3B;
+    --medium-gray: #6B7280;
+    --neon-green: #4ADF86;
+    --light-green: #55F991;
+    --button-green: #10B981;   
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #E5E7EB;
+    margin: 0 auto;
+    min-width: 360px;
+    max-width: 520px;
+    text-align: center;
+}
+
+#banner,
+#password-generator {
+    background-color: var(--white-background);
+    padding: 2.5em 1.25em;
+    margin: 1.875em 2.5em 0;
+    border-radius: 20px;
+}
+
+#password-generator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 5px var(--border-dark-green);
+    /* box-shadow: 0.1875em 0.1875em #9CA3AF; */
+}
+
+#banner,
+#password-generator,
+#toggle-container, {
+}
+
+
+/* Banner Typography */
+
+#banner h1 {
+    font-family: "Karla", sans-serif;
+}
+
+#banner span {
+    color: var(--neon-green);
+}
+
+#banner p {
+    color: var(--dark-gray);
+}
+
+
+/* Passwords Section */
+
+/* slide to select desired password length */
+
+#password-slider-text {
+    font-family: "Karla", sans-serif;
+    font-size: 1.5rem;
+}
+
+#slider-number {
+    color: var(--neon-green);
+}
+
+#slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50%;
+    height: 2px;
+    background-color: var(--medium-gray);
+    outline: none;
+    -webkit-transition: 0.2s;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+    margin: 1.5em 0;
+    cursor: pointer;
+}
+
+#slider:hover {
+    opacity: 1;
+    height: 4px;
+}
+
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: var(--button-green);
+    border-radius: 50%;
+}
+
+
+/* click the button to generate passwords */
+
+#generate-btn,
+.password-output {
+    border-radius: 10px;
+}
+
+#generate-btn {
+    background-color: var(--button-green);
+    color: #FFFFFF;
+    border: none;
+    padding: 1em 2em;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+}
+
+#generate-btn:hover {
+    padding: 1.25em 2.25em;
+}
+
+
+/* display generated passwords */
+
+.password-output {
+    background-color: #F9FAFB;
+    color: var(--medium-gray);
+    border: solid 3px var(--border-dark-green);
+    min-width: 50%;
+    min-height: 50px;
+    padding: 1em 2em;
+    margin-bottom: 0.5em;
+}
+
+
+/* Dark theme */
+
+body.dark-theme {
+    background-color: #111827;
+    color: #FFFFFF;
+}
+
+#banner.dark-theme,
+#password-generator.dark-theme {
+    background-color: #1F2937;
+}
+
+#banner p.dark-theme {
+    color: #D5D4D8;
+}
+
+#slider.dark-theme {
+    background-color: var(--light-green);
+}
+
+.password-output.dark-theme {
+    background-color: #273549;
+    color: var(--light-green);
+}
+
+/* Switch theme */
+/* Switch to dark mode or light mode */
+
+#toggle-container,
+.label {
+    display: flex;
+    align-items: center;
+}
+
+#toggle-container {
+    justify-content: center;
+    margin-top: 1.25em;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(1.5em);
+}
+
+.label {
+    background-color: #111111;
+    justify-content: space-between;
+    padding: 0.313em;
+    position: relative;
+    border-radius: 50px;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+}
+
+.ball {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transition: transform 0.2s linear;
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+/* Media queries */
+
+@media (min-width: 576px) {
+}
