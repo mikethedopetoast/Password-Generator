@@ -1,6 +1,6 @@
 # An easy to use Password Generator by Scrimba
 
-This project is deployed at the [link here.](https://github.com/mikethedopetoast/password-generator/)
+This project is deployed at the [link here.](https://passwordgeneratorbymtdt.netlify.app/)
 
 ### Project Overview
 
