@@ -36,11 +36,6 @@ body {
     border: solid 5px var(--border-dark-green);
 }
 
-#banner,
-#password-generator,
-#toggle-container, {
-}
-
 
 /* Banner Typography */
 
@@ -180,7 +175,7 @@ body.dark-theme {
 
 #toggle-container {
     justify-content: center;
-    margin-top: 1.25em;
+    margin: 1.25em auto;
 }
 
 .checkbox {
