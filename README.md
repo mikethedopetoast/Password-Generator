@@ -6,10 +6,16 @@ This project is deployed at the [link here.](https://passwordgeneratorbymtdt.net
 
 Users can:
 - generate **2 passwords** with 8-16 characters
-- set the password length by slider and reflect it in real-time
+- set the password length by slider and reflect it in real time
 - copy passwords to the clipboard by clicking on them
 - see hover states for the interactive elements
 - switch between light and dark themes
+
+### Screenshots
+
+Light Mode & Dark Mode (Mobile View)</br>
+<img src="https://github.com/user-attachments/assets/d766df63-0d32-4d66-9cbf-7e0e1b9bf5ce" width="300" />
+<img src="https://github.com/user-attachments/assets/b364579e-9b6b-4194-9c86-df8c349e6e23" width="300" />
 
 ### Techstack
 
