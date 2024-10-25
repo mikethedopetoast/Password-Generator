@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root {
     --white-background: #F3F4F6;
     --border-dark-green: #047857;
@@ -6,10 +12,6 @@
     --neon-green: #4ADF86;
     --light-green: #55F991;
     --button-green: #10B981;   
-}
-
-*, *::before, *::after {
-    box-sizing: border-box;
 }
 
 body {
@@ -35,7 +37,6 @@ body {
     align-items: center;
     border: solid 5px var(--border-dark-green);
 }
-
 
 /* Banner Typography */
 
@@ -175,7 +176,7 @@ body.dark-theme {
 
 #toggle-container {
     justify-content: center;
-    margin: 1.25em auto;
+    margin-top: 1.25em;
 }
 
 .checkbox {
